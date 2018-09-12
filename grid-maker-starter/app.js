@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function(){
     body.setAttribute('class', 'row');
     board.appendChild(body);
     body.addEventListener('click', () => {
-      body.style.backgroundColor = '#657';
     });
     for (k = 0; k < columns; k++) {
       const body = document.createElement('div');
@@ -22,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   }
 
+  
   function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
